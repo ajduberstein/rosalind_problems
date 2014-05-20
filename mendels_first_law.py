@@ -13,8 +13,8 @@ def mendelian(k,m,n):
                 pairings.append(x)
         dominant_pairs, total_pairs = 0, 0
         for mother, father in pairings:
-                inheiritance = (x+y for x in mother for y in father)
-                for gene_set in inheiritance:
+                inheritance = (x+y for x in mother for y in father)
+                for gene_set in inheritance:
                         if 'H' in gene_set: dominant_pairs += 1
                         total_pairs+=1
         print float(dominant_pairs)/total_pairs
